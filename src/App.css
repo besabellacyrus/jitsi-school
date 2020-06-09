@@ -1,5 +1,15 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
 .App {
   text-align: center;
+}
+
+body {
+  color: #718096;
+  font-size: 14px;
 }
 
 .App-logo {

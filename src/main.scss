@@ -1,0 +1,68 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin-top: 0;
+}
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  position: relative;
+  height: 100vh; 
+  grid-gap: 0.5rem; 
+  padding: 0.2rem;
+  // background-color: rgb(211,211,211);
+  .video-wrapper {
+    display: grid;
+    grid-gap: 0.5rem;
+    padding: 1rem;
+    .teacher-vid, .student-vid {
+      background-color: #fff;
+      // border: 1px solid red; 
+      -webkit-box-shadow: 10px 10px 36px -29px rgba(0,0,0,0.75);
+      -moz-box-shadow: 10px 10px 36px -29px rgba(0,0,0,0.75);
+      box-shadow: 10px 10px 36px -29px rgba(0,0,0,0.75);
+    }
+  }
+  .lesson-material {
+    -webkit-box-shadow: 10px 10px 36px -29px rgba(0,0,0,0.75);
+      -moz-box-shadow: 10px 10px 36px -29px rgba(0,0,0,0.75);
+      box-shadow: 10px 10px 36px -29px rgba(0,0,0,0.75);
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .toolbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    -webkit-box-shadow: 10px 10px 36px -29px rgba(0,0,0,0.75);
+      -moz-box-shadow: 10px 10px 36px -29px rgba(0,0,0,0.75);
+      box-shadow: 10px 10px 36px -29px rgba(0,0,0,0.75);
+    .page-control, .tools {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      place-self: flex-end;
+      height: 100%;
+      div {
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0.5em;
+        padding-right: 0.5rem;
+        background-color: #e3e3e3;
+        margin-left: 1rem;
+        border-radius: 4px;
+        img {
+          height: 100%;
+        }
+      }
+    }
+    .tools {
+      place-self: flex-start;
+    }
+  }
+  .board-wrapper {
+    display: grid;
+  }
+}
